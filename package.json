@@ -4,7 +4,7 @@
   "description": "A gumtree top advertising viewer application",
   "main": "main.js",
   "scripts": {
-    "start": "electron main.js"
+    "start": "electron ./src/main.js"
   },
   "keywords": [
     "Electron",
