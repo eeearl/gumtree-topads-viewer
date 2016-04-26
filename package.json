@@ -1,28 +1,28 @@
 {
-  "name": "electron-quick-start",
+  "name": "gumtree-topads-viewer",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A gumtree top advertising viewer application",
   "main": "main.js",
   "scripts": {
     "start": "electron main.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/electron/electron-quick-start.git"
-  },
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial"
+    "gumtree",
+    "topads",
+    "application"
   ],
-  "author": "GitHub",
+  "author": "Nathan",
   "license": "CC0-1.0",
   "bugs": {
     "url": "https://github.com/electron/electron-quick-start/issues"
   },
   "homepage": "https://github.com/electron/electron-quick-start#readme",
   "devDependencies": {
-    "electron-prebuilt": "^0.37.0"
+    "electron-prebuilt": "^0.37.0",
+    "electron-rebuild": "^1.1.3"
+  },
+  "dependencies": {
+    "jquery": "^2.2.3"
   }
 }
