@@ -1,13 +1,14 @@
-const gumtreeUrl = "http://www.gumtree.com.au/s-vic/pos+system/k0l3008844";
+const gumtreeUrl = "http://www.gumtree.com.au/s-";
+const lastParam = "k0l3008844";
 const reqBtn = $('#search-button');
   
 var htmlBody, topadsArea, childrenLocationNode;
 var childrenNode, titles=[], locations=[];
 
 reqBtn.on('click', function() {
-
+  
 	$.ajax({
-  		url: gumtreeUrl,
+  		url: gumtreeUrl + $('#city').text() + '/' + $('#search-word').text() + '/' + lastParam
 	}).done(function(data) {
   	
       	htmlBody = $.parseHTML(data);
