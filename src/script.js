@@ -7,8 +7,13 @@ var childrenNode, titles=[], locations=[];
 
 reqBtn.on('click', function() {
   
+  var words = $("input[name='search-word']").val();
+  words = words.split(' ').join('+');
+  
+  var city = $("input[name='city']").val();
+
 	$.ajax({
-  		url: gumtreeUrl + $('#city').text() + '/' + $('#search-word').text() + '/' + lastParam
+  		url: gumtreeUrl + city + '/' + words + '/' + lastParam
 	}).done(function(data) {
   	
       	htmlBody = $.parseHTML(data);
